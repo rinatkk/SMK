@@ -1,0 +1,236 @@
+###############################################################################
+#
+# IAR ELF Linker V7.80.4.12462/W32 for ARM                09/Oct/2020  22:07:50
+# Copyright 2007-2017 IAR Systems AB.
+#
+#    Output file  =  
+#        D:\code\mkr\stm32\stm32f0xx\smk_10_12_end_gerc\Debug\Exe\smk.out
+#    Map file     =  
+#        D:\code\mkr\stm32\stm32f0xx\smk_10_12_end_gerc\Debug\List\smk.map
+#    Command line =  
+#        D:\code\mkr\stm32\stm32f0xx\smk_10_12_end_gerc\Debug\Obj\M0_Startup.o
+#        D:\code\mkr\stm32\stm32f0xx\smk_10_12_end_gerc\Debug\Obj\main.o -o
+#        D:\code\mkr\stm32\stm32f0xx\smk_10_12_end_gerc\Debug\Exe\smk.out
+#        --redirect _Printf=_PrintfFull --redirect _Scanf=_ScanfFull --map
+#        D:\code\mkr\stm32\stm32f0xx\smk_10_12_end_gerc\Debug\List\smk.map
+#        --config "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+#        7.5\arm\config\linker\ST\stm32f030x6.icf" --semihosting --entry
+#        __iar_program_start --vfe
+#
+###############################################################################
+
+*******************************************************************************
+*** RUNTIME MODEL ATTRIBUTES
+***
+
+CppFlavor       = *
+__SystemLibrary = DLib
+
+
+*******************************************************************************
+*** PLACEMENT SUMMARY
+***
+
+"A0":  place at 0x08000000 { ro section .intvec };
+"P1":  place in [from 0x08000000 to 0x08007fff] { ro };
+"P2":  place in [from 0x20000000 to 0x20000fff] { rw, block CSTACK, block HEAP };
+
+  Section          Kind        Address   Size  Object
+  -------          ----        -------   ----  ------
+"A0":                                    0xc0
+  .intvec          ro code  0x08000000   0xc0  M0_Startup.o [1]
+                          - 0x080000c0   0xc0
+
+"P1":                                   0xa84
+  .text            ro code  0x080000c0  0x534  main.o [1]
+  .text            ro code  0x080005f4   0x20  I32ToDbl.o [4]
+  .text            ro code  0x08000614  0x184  DblMul.o [4]
+  .text            ro code  0x08000798   0xc2  DblDiv.o [4]
+  .text            ro code  0x0800085a   0x62  DblToFlt.o [4]
+  .text            ro code  0x080008bc   0x1e  I32ToFlt.o [4]
+  .text            ro code  0x080008da   0xb0  FltMul.o [4]
+  .text            ro code  0x0800098a   0xaa  FltDiv.o [4]
+  .text            ro code  0x08000a34   0x3c  zero_init3.o [5]
+  .text            ro code  0x08000a70   0x28  data_init.o [5]
+  .iar.init_table  const    0x08000a98   0x10  - Linker created -
+  .text            ro code  0x08000aa8   0x1a  cmain.o [5]
+  .text            ro code  0x08000ac2    0x4  low_level_init.o [3]
+  .text            ro code  0x08000ac6    0x8  exit.o [3]
+  .text            ro code  0x08000ace    0x2  M0_Startup.o [1]
+  .text            ro code  0x08000ad0    0xa  cexit.o [5]
+  .text            ro code  0x08000ada    0x2  M0_Startup.o [1]
+  .text            ro code  0x08000adc   0x14  exit.o [6]
+  .text            ro code  0x08000af0    0xc  cstartup_M.o [5]
+  .text            ro code  0x08000afc    0x8  M0_Startup.o [1]
+  .text            ro code  0x08000b04    0x2  M0_Startup.o [1]
+  .text            ro code  0x08000b06    0x2  M0_Startup.o [1]
+  .text            ro code  0x08000b08    0x2  M0_Startup.o [1]
+  .text            ro code  0x08000b0a    0x2  M0_Startup.o [1]
+  .text            ro code  0x08000b0c    0x2  M0_Startup.o [1]
+  .text            ro code  0x08000b0e    0x2  M0_Startup.o [1]
+  .text            ro code  0x08000b10    0x2  M0_Startup.o [1]
+  .text            ro code  0x08000b12    0x2  M0_Startup.o [1]
+  .text            ro code  0x08000b14    0x2  M0_Startup.o [1]
+  .text            ro code  0x08000b16    0x2  M0_Startup.o [1]
+  .text            ro code  0x08000b18    0x2  M0_Startup.o [1]
+  .text            ro code  0x08000b1a    0x2  M0_Startup.o [1]
+  .text            ro code  0x08000b1c    0x2  M0_Startup.o [1]
+  .text            ro code  0x08000b1e    0x2  M0_Startup.o [1]
+  .text            ro code  0x08000b20    0x2  M0_Startup.o [1]
+  .text            ro code  0x08000b22    0x2  M0_Startup.o [1]
+  .text            ro code  0x08000b24    0x2  M0_Startup.o [1]
+  .text            ro code  0x08000b26    0x2  M0_Startup.o [1]
+  .text            ro code  0x08000b28    0x2  M0_Startup.o [1]
+  .text            ro code  0x08000b2a    0x2  M0_Startup.o [1]
+  .text            ro code  0x08000b2c    0x2  M0_Startup.o [1]
+  .text            ro code  0x08000b2e    0x2  M0_Startup.o [1]
+  .text            ro code  0x08000b30    0x2  M0_Startup.o [1]
+  .text            ro code  0x08000b32    0x2  M0_Startup.o [1]
+  .text            ro code  0x08000b34    0x2  M0_Startup.o [1]
+  .text            ro code  0x08000b36    0x2  M0_Startup.o [1]
+  .text            ro code  0x08000b38    0x2  M0_Startup.o [1]
+  .text            ro code  0x08000b3a    0x2  M0_Startup.o [1]
+  .text            ro code  0x08000b3c    0x2  M0_Startup.o [1]
+  .text            ro code  0x08000b3e    0x2  M0_Startup.o [1]
+  .text            ro code  0x08000b40    0x2  M0_Startup.o [1]
+  .text            ro code  0x08000b42    0x2  M0_Startup.o [1]
+  .rodata          const    0x08000b44    0x0  zero_init3.o [5]
+                          - 0x08000b44  0xa84
+
+"P2", part 1 of 2:                       0x34
+  .bss             zero     0x20000000   0x20  main.o [1]
+  .bss             zero     0x20000020   0x14  main.o [1]
+                          - 0x20000034   0x34
+
+"P2", part 2 of 2:                      0x400
+  CSTACK                    0x20000038  0x400  <Block>
+    CSTACK         uninit   0x20000038  0x400  <Block tail>
+                          - 0x20000438  0x400
+
+
+*******************************************************************************
+*** INIT TABLE
+***
+
+          Address     Size
+          -------     ----
+Zero (__iar_zero_init3)
+    1 destination range, total size 0x34:
+          0x20000000  0x34
+
+
+
+*******************************************************************************
+*** MODULE SUMMARY
+***
+
+    Module            ro code  ro data  rw data
+    ------            -------  -------  -------
+D:\code\mkr\stm32\stm32f0xx\smk_10_12_end_gerc\Debug\Obj: [1]
+    M0_Startup.o          268
+    main.o              1 332                52
+    -------------------------------------------
+    Total:              1 600                52
+
+command line: [2]
+    -------------------------------------------
+    Total:
+
+dl6M_tln.a: [3]
+    exit.o                  8
+    low_level_init.o        4
+    -------------------------------------------
+    Total:                 12
+
+m6M_tl.a: [4]
+    DblDiv.o              194
+    DblMul.o              388
+    DblToFlt.o             98
+    FltDiv.o              170
+    FltMul.o              176
+    I32ToDbl.o             32
+    I32ToFlt.o             30
+    -------------------------------------------
+    Total:              1 088
+
+rt6M_tl.a: [5]
+    cexit.o                10
+    cmain.o                26
+    cstartup_M.o           12
+    data_init.o            40
+    zero_init3.o           60
+    -------------------------------------------
+    Total:                148
+
+shb_l.a: [6]
+    exit.o                 20
+    -------------------------------------------
+    Total:                 20
+
+    Linker created                  16    1 024
+-----------------------------------------------
+    Grand Total:        2 868       16    1 076
+
+
+*******************************************************************************
+*** ENTRY LIST
+***
+
+Entry                      Address   Size  Type      Object
+-----                      -------   ----  ----      ------
+.iar.init_table$$Base   0x08000a98          --   Gb  - Linker created -
+.iar.init_table$$Limit  0x08000aa8          --   Gb  - Linker created -
+?main                   0x08000aa9         Code  Gb  cmain.o [5]
+ADC_VAL                 0x080002a1   0x34  Code  Gb  main.o [1]
+ADC_init                0x080001f5   0x74  Code  Gb  main.o [1]
+CSTACK$$Base            0x20000038          --   Gb  - Linker created -
+CSTACK$$Limit           0x20000438          --   Gb  - Linker created -
+EXTI415_Handler         0x08000309    0x2  Code  Gb  main.o [1]
+RCC_init                0x080000c1  0x112  Code  Gb  main.o [1]
+RTC_Handler             0x08000341   0x9a  Code  Gb  main.o [1]
+Region$$Table$$Base     0x08000a98          --   Gb  - Linker created -
+Region$$Table$$Limit    0x08000aa8          --   Gb  - Linker created -
+SYSTICK_init            0x08000269   0x36  Code  Gb  main.o [1]
+SysTick_Handler         0x080002d5   0x30  Code  Gb  main.o [1]
+Timers                  0x20000000   0x20  Data  Gb  main.o [1]
+Volt                    0x20000020   0x14  Data  Gb  main.o [1]
+__ICFEDIT_region_RAM_end__ {Abs}
+                        0x20000fff         Data  Gb  command line/config [2]
+__ICFEDIT_region_RAM_start__ {Abs}
+                        0x20000000         Data  Gb  command line/config [2]
+__aeabi_d2f             0x0800085b         Code  Gb  DblToFlt.o [4]
+__aeabi_ddiv            0x08000799         Code  Gb  DblDiv.o [4]
+__aeabi_dmul            0x08000615         Code  Gb  DblMul.o [4]
+__aeabi_fdiv            0x0800098b         Code  Gb  FltDiv.o [4]
+__aeabi_fmul            0x080008db         Code  Gb  FltMul.o [4]
+__aeabi_ui2d            0x080005f5         Code  Gb  I32ToDbl.o [4]
+__aeabi_ui2f            0x080008bd         Code  Gb  I32ToFlt.o [4]
+__cmain                 0x08000aa9         Code  Gb  cmain.o [5]
+__exit                  0x08000add   0x14  Code  Gb  exit.o [6]
+__iar_data_init3        0x08000a71   0x28  Code  Gb  data_init.o [5]
+__iar_program_start     0x08000af1         Code  Gb  cstartup_M.o [5]
+__iar_ui2d              0x080005f9         Code  Gb  I32ToDbl.o [4]
+__iar_ui2f              0x080008c1         Code  Gb  I32ToFlt.o [4]
+__iar_zero_init3        0x08000a35   0x3c  Code  Gb  zero_init3.o [5]
+__low_level_init        0x08000ac3    0x4  Code  Gb  low_level_init.o [3]
+__vector_table          0x08000000         Data  Gb  M0_Startup.o [1]
+_call_main              0x08000ab5         Code  Gb  cmain.o [5]
+_exit                   0x08000ad1         Code  Gb  cexit.o [5]
+_main                   0x08000abf         Code  Gb  cmain.o [5]
+exit                    0x08000ac7    0x8  Code  Gb  exit.o [3]
+main                    0x080003fd  0x1ac  Code  Gb  main.o [1]
+
+
+[1] = D:\code\mkr\stm32\stm32f0xx\smk_10_12_end_gerc\Debug\Obj
+[2] = command line
+[3] = dl6M_tln.a
+[4] = m6M_tl.a
+[5] = rt6M_tl.a
+[6] = shb_l.a
+
+  2 868 bytes of readonly  code memory
+     16 bytes of readonly  data memory
+  1 076 bytes of readwrite data memory
+
+Errors: none
+Warnings: none

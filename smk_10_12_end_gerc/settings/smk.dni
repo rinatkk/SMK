@@ -1,0 +1,245 @@
+[Stack]
+FillEnabled=0
+OverflowWarningsEnabled=1
+WarningThreshold=90
+SpWarningsEnabled=1
+WarnLogOnly=1
+UseTrigger=1
+TriggerName=main
+LimitSize=0
+ByteLimit=50
+[JLinkDriver]
+CStepIntDis=_ 0
+LeaveTargetRunning=_ 0
+[StLinkDriver]
+stlinkserialNo=40541387
+stlinkfoundProbes=
+CStepIntDis=_ 0
+LeaveTargetRunning=_ 0
+stlinkResetStyle=0
+stlinkResetStrategy=1
+[DebugChecksum]
+Checksum=-869333234
+[Exceptions]
+StopOnUncaught=_ 0
+StopOnThrow=_ 0
+[CallStack]
+ShowArgs=0
+[Disassembly]
+MixedMode=1
+[CodeCoverage]
+Enabled=_ 0
+[Interrupts]
+Enabled=1
+[MemConfig]
+Base=1
+Manual=0
+Ddf=1
+TypeViol=0
+Stop=1
+[Trace1]
+Enabled=0
+ShowSource=1
+[Simulator]
+Freq=10000000
+MultiCoreRunAll=1
+[SWOTraceHWSettings]
+OverrideDefaultClocks=0
+CpuClock=72000000
+ClockAutoDetect=0
+ClockWanted=2000000
+JtagSpeed=2000000
+Prescaler=36
+TimeStampPrescIndex=0
+TimeStampPrescData=0
+PcSampCYCTAP=1
+PcSampPOSTCNT=15
+PcSampIndex=0
+DataLogMode=0
+ITMportsEnable=0
+ITMportsTermIO=0
+ITMportsLogFile=0
+ITMlogFile=$PROJ_DIR$\ITM.log
+[Trace2]
+Enabled=0
+ShowSource=0
+[SWOTraceWindow]
+PcSampling=0
+InterruptLogs=0
+ForcedTimeStamps=0
+EventCPI=0
+EventEXC=0
+EventFOLD=0
+EventLSU=0
+EventSLEEP=0
+[DataLog]
+LogEnabled=0
+GraphEnabled=0
+ShowTimeLog=1
+SumEnabled=0
+ShowTimeSum=1
+[EventLog]
+Title_0=Ch3
+Symbol_0=0 4 1
+Title_1=Ch2
+Symbol_1=0 4 1
+Title_2=Ch1
+Symbol_2=0 4 1
+Title_3=Ch0
+Symbol_3=0 4 1
+LogEnabled=0
+GraphEnabled=0
+ShowTimeLog=1
+SumEnabled=0
+ShowTimeSum=1
+SumSortOrder=0
+[InterruptLog]
+LogEnabled=0
+GraphEnabled=0
+ShowTimeLog=1
+SumEnabled=0
+ShowTimeSum=1
+SumSortOrder=0
+[DriverProfiling]
+Enabled=0
+Mode=3
+Graph=0
+Symbiont=0
+Exclusions=
+[struct_types]
+Fmt0=Bind_type-addr_256	4	0
+Fmt1=Bind_type-addr_32	4	0
+Fmt2=Bind_type-chann	4	0
+Fmt3=Bind_type-gerk_t	4	0
+Fmt4=Bind_type-t_tx	3	0
+Fmt5=struct Ledx-tau	3	0
+Fmt6=struct Ledx-time_off	3	0
+Fmt7=struct Ledx-time_on	3	0
+[array_types]
+Fmt0=unsigned char[114]	4	0
+Fmt1=unsigned char[128]	4	0
+Fmt2=unsigned char[148]	4	0
+Fmt3=unsigned char[15]	4	0
+Fmt4=unsigned char[16]	4	0
+Fmt5=unsigned char[2]	4	0
+Fmt6=unsigned char[32]	4	0
+Fmt7=unsigned char[3]	3	0
+Fmt8=unsigned char[44]	4	0
+Fmt9=unsigned char[4]	4	0
+Fmt10=unsigned char[63]	4	0
+Fmt11=unsigned char[64]	4	0
+Fmt12=unsigned char[6]	4	0
+Fmt13=unsigned char[7]	4	0
+Fmt14=unsigned char[8]	3	0
+Fmt15=unsigned char[9]	4	0
+[watch_formats]
+Fmt0={W}1:ADDR_256	4	0
+Fmt1={W}1:ADDR_32	4	0
+Fmt2={W}1:CHANNEL	4	0
+Fmt3={W}1:SendL	3	0
+Fmt4={W}1:T_TX	4	0
+Fmt5={W}1:adc_cn	3	0
+Fmt6={W}1:addr_256	4	0
+Fmt7={W}1:bit_shift	3	0
+Fmt8={W}1:data1	1	0
+Fmt9={W}1:data2	3	0
+Fmt10={W}1:data_shift	3	0
+Fmt11={W}1:f_addr	4	0
+Fmt12={W}1:f_data	4	0
+Fmt13={W}1:fifo_delay	3	0
+Fmt14={W}1:jch	4	0
+Fmt15={W}1:lpack	3	0
+Fmt16={W}1:mode	4	0
+Fmt17={W}1:plen	3	0
+Fmt18={W}1:try	4	0
+Fmt19={W}42:CHANNEL	3	0
+Fmt20={W}42:CTS_RESP	4	0
+Fmt21={W}42:RTC_period	3	0
+Fmt22={W}42:WakeCause	3	0
+Fmt23={W}42:a	4	0
+Fmt24={W}42:a10	3	0
+Fmt25={W}42:adc_cn	3	0
+Fmt26={W}42:addr_256	3	0
+Fmt27={W}42:alrtst	4	0
+Fmt28={W}42:arrow_1	4	0
+Fmt29={W}42:b	4	0
+Fmt30={W}42:bat	4	0
+Fmt31={W}42:bat2	3	0
+Fmt32={W}42:bat2_cn	3	0
+Fmt33={W}42:bindst	4	0
+Fmt34={W}42:bit_shift	4	0
+Fmt35={W}42:bkp_delta	3	0
+Fmt36={W}42:bkp_t	3	0
+Fmt37={W}42:bkp_u	3	0
+Fmt38={W}42:c	4	0
+Fmt39={W}42:cn_bkp	3	0
+Fmt40={W}42:data1	4	0
+Fmt41={W}42:data1_prev	4	0
+Fmt42={W}42:data2	4	0
+Fmt43={W}42:data_shift	4	0
+Fmt44={W}42:dtimsend	3	0
+Fmt45={W}42:dtimstby	3	0
+Fmt46={W}42:f_data	4	0
+Fmt47={W}42:irq_on	3	0
+Fmt48={W}42:jbind	4	0
+Fmt49={W}42:jch	4	0
+Fmt50={W}42:led_mode	3	0
+Fmt51={W}42:mode	4	0
+Fmt52={W}42:mode_change	3	0
+Fmt53={W}42:packst	4	0
+Fmt54={W}42:period	3	0
+Fmt55={W}42:px55	3	0
+Fmt56={W}42:pxaa	3	0
+Fmt57={W}42:rad_sw	3	0
+Fmt58={W}42:scan_time	3	0
+Fmt59={W}42:sec_t	3	0
+Fmt60={W}42:sec_unit_1	3	0
+Fmt61={W}42:start	4	0
+Fmt62={W}42:state	4	0
+Fmt63={W}42:state_prev	4	0
+Fmt64={W}42:sum_5	3	0
+Fmt65={W}42:tamp_cn	3	0
+Fmt66={W}42:tampst	4	0
+Fmt67={W}42:tim	3	0
+Fmt68={W}42:timalert	4	0
+Fmt69={W}42:timdec	3	0
+Fmt70={W}42:timhead_1	3	0
+Fmt71={W}42:timhead_2	3	0
+Fmt72={W}42:timhead_3	3	0
+Fmt73={W}42:timradio	4	0
+Fmt74={W}42:timsend	3	0
+Fmt75={W}42:timstby	3	0
+Fmt76={W}42:timtamp	4	0
+Fmt77={W}42:tkey_0	4	0
+Fmt78={W}42:tprev	3	0
+Fmt79={W}42:type	4	0
+[Log file]
+LoggingEnabled=_ 0
+LogFile=_ ""
+Category=_ 0
+[TermIOLog]
+LoggingEnabled=_ 1
+LogFile=_ "$PROJ_DIR$\TermIO.log"
+[CallStackLog]
+Enabled=0
+[CallStackStripe]
+ShowTiming=1
+[Disassemble mode]
+mode=0
+[Breakpoints2]
+Bp0=_ 1 "EMUL_CODE" "{$PROJ_DIR$\src.c}.856.3" 0 0 1 "" 0 "" 0
+Bp1=_ 1 "EMUL_CODE" "{$PROJ_DIR$\src.c}.856.3" 0 0 1 "" 0 "" 0
+Bp2=_ 1 "EMUL_CODE" "{$PROJ_DIR$\src.c}.12.3" 0 0 1 "" 0 "" 0
+Count=3
+[Aliases]
+A0=_ "C:\Users\Ren\Desktop\smk_struct\smk_struct\smk_10_12_end\main.c" ""
+A1=_ "C:\Users\Ren\Desktop\smk_struct\smk_struct\smk_10_12_end\radio.c" "C:\Users\rkusainov\Desktop\smk_all\smk_jump\smk_struct\smk_10_12_end\radio.c"
+A2=_ "C:\Users\rkusainov\Desktop\smk_all\smk_jump\smk_struct\smk_10\main.c" "D:\IAR\stm32\smk_all\smk_jump\smk_struct\smk_10\main.c"
+A3=_ "C:\Users\rkusainov\Desktop\smk_all\smk_jump\smk_struct\smk_10\radio.c" "D:\IAR\stm32\smk_all\smk_jump\smk_struct\smk_10\radio.c"
+A4=_ "C:\Users\rkusainov\Desktop\smk_all\smk_jump\smk_struct\smk_10_4\main.c" "C:\Users\rkusainov\Desktop\smk_all\smk_jump\smk_struct\smk_10_5\main.c"
+A5=_ "C:\Users\rkusainov\Desktop\smk_all\smk_jump\smk_struct\smk_10_6\main.c" "C:\Users\rkusainov\Desktop\smk_all\smk_jump\smk_struct\smk_10_7\main.c"
+A6=_ "C:\Users\rkusainov\Desktop\smk_all\smk_jump\smk_struct\smk_10_6\radio.c" "C:\Users\rkusainov\Desktop\smk_all\smk_jump\smk_struct\smk_10_7\main.c"
+A7=_ "C:\Users\rkusainov\Desktop\smk_all\smk_jump\smk_struct\smk_10_9\main.c" "C:\Users\rkusainov\Desktop\smk_all\smk_jump\smk_struct\smk_10_10\main.c"
+A8=_ "E:\smk_struct\smk_struct\smk_10_2\main.c" "C:\Users\Ren\Desktop\smk_all\smk_struct\smk_10_2\main.c"
+Count=9
+SuppressDialog=1
